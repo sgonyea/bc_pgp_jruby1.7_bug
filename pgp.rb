@@ -16,8 +16,10 @@ module PGP
 
   include_package "org.bouncycastle.openpgp"
 
-  Public_Key  = "#{Root_Dir}/keys/bc_pgp_jruby_bug-pub.asc"
-  Private_Key = "#{Root_Dir}/keys/bc_pgp_jruby_bug-prv.asc"
+  root = File.dirname(File.expand_path(__FILE__))
+
+  Public_Key  = "#{root}/keys/bc_pgp_jruby_bug-pub.asc"
+  Private_Key = "#{root}/keys/bc_pgp_jruby_bug-prv.asc"
   Email_Addr  = "foo@bar.com"
 
   BC_Provider_Code = "BC"

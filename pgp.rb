@@ -148,7 +148,7 @@ module PGP
 
       if sec_key.nil?
         # Commented out for this example.
-        # logger.debug "This may be cause for concern. The data being decrypted has a key_id of '#{key_id}'."
+        # logger.debug "This may be cause for concern. The data being decrypted has a key_id of '#{key_id}' which cannot be found in the private key."
       else
         break
       end

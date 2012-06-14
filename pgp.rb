@@ -1,10 +1,8 @@
 #!/usr/bin/env jruby
 
 require 'java'
-require 'jars/bcprov-jdk16-146.jar'
-require 'jars/bcmail-jdk16-146.jar'
-require 'jars/bctsp-jdk16-146.jar'
-require 'jars/bcpg-jdk16-146.jar'
+require 'jars/bcprov-jdk15on-147.jar'
+require 'jars/bcpg-jdk15on-147.jar'
 
 module PGP
   java_import 'java.io.ByteArrayInputStream'
